@@ -37,7 +37,7 @@ function Accordion({ title, active, handleChange }) {
           {active && (
         
                 <div
-              className={`h-[200px] lg:w-[100%] md:w-[80%] font-medium sm:w-[60%] mx-auto w-[90%] transition-all duration-300 py-5 bg-slate-400 rounded-b-xl px-5`}
+              className={`h-[200px] lg:w-[100%] md:w-[80%] font-medium sm:w-[60%] mx-auto w-[100%] transition-all duration-300 py-5 bg-slate-400 rounded-b-xl px-5`}
             >
               <h1>{content}</h1>
             </div>

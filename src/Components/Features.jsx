@@ -29,9 +29,11 @@ function Features() {
           {paragraph1}
         </p>
       </Zoom>
-      <Zoom {...zoomOptions}>
+   
         <section className="bg-white dark:bg-slate-800 duration-300 pt-5 lg:pt-20 w-full h-auto grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3 place-items-center px-5 lg:px-20 py-10">
+        <Zoom {...zoomOptions} cascade>
           {FeatureCard.map((cards, index) => (
+              
             <div
               key={index}
               className={` flex items-center flex-col py-10  gap-3 hover:drop-shadow-2xl dark:hover:shadow-slate-600 transition-all
@@ -48,9 +50,10 @@ function Features() {
                 {paragraph2}
               </p>
             </div>
+       
           ))}
+          </Zoom>
         </section>
-      </Zoom>
     </section>
   );
 }

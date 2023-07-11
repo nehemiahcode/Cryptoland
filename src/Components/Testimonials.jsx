@@ -121,7 +121,7 @@ function Testimonials() {
           {Cards.map((card, index) => (
             <div
               key={index}
-              className=" bg-white relative dark:bg-slate-700 flex flex-col justify-between rounded-xl shadow-xl w-[50%] h-[350px] py-10 px-10"
+              className=" bg-white relative dark:bg-slate-700 flex flex-col justify-between rounded-xl shadow-xl w-[50%] h-[300px] py-5 px-5"
             >
               <p className=" text-black dark:text-white font-medium text-md w-[80%]">
                 “A vast number of clients decide to create dedicated software is

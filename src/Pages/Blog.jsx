@@ -9,7 +9,7 @@ function Blog() {
   useEffect(() => {
     const Timer = setTimeout(() => {
       setAnimating(false);
-    }, 1000);
+    }, 2000);
     return () => clearTimeout(Timer);
   });
   return (

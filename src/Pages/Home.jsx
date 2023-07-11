@@ -15,7 +15,7 @@ function Home() {
 useEffect(() => {
   const Timer = setTimeout(() => {
     setAnimating(false)
-  }, 1000);
+  }, 3000);
   return () => clearTimeout(Timer)
 })
 

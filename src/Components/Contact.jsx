@@ -90,6 +90,7 @@ function Contact() {
             <div className=" flex justify-between flex-col lg:flex-row items-center sm:items-start sm:mx-5 gap-5 w-full mb-3">
               {Inputs.map((inputs, index) => (
                 <input
+                required={true}
                   key={index}
                   type={inputs.type}
                   placeholder={inputs.placeholder}
@@ -101,6 +102,7 @@ function Contact() {
             <div className=" flex justify-between flex-col lg:flex-row items-center sm:items-start sm:mx-5 gap-5 w-full mb-3">
               {Inputs2.map((inputs, index) => (
                 <input
+                required={true}
                   key={index}
                   type={inputs.type}
                   placeholder={inputs.placeholder}
@@ -111,6 +113,7 @@ function Contact() {
             </div>
             <div className=" w-full flex flex-col items-center md:items-start lg:items-center sm:mx-5 ">
               <textarea
+              required={true}
                 name=""
                 placeholder="Message*"
                 className=" lg:w-[100%] sm:w-[64%] md:w-[53%] dark:placeholder:text-zinc-800
@@ -119,7 +122,7 @@ function Contact() {
               ></textarea>
             </div>
             <button
-              type="button"
+              type="submit"
               className=" bg-blue-500 rounded-full px-7 ml-6 text-white font-medium text-lg py-3 my-4 w-[auto] "
             >
               Send Message

@@ -4,8 +4,7 @@ import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import { CgMenuRight, CgClose } from "react-icons/cg";
 import { IoSunny } from "react-icons/io5";
 import { BsMoonStars } from "react-icons/bs";
-import {  NavLink } from "react-router-dom";
-import "../App.css";
+import {  Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   const [visible, setVisible] = useState(false);
@@ -107,7 +106,7 @@ function Navbar() {
             type="button"
             className=" lg:hidden px-7 py-3 mt-3 w-[200px] transition-all duration-200 hover:bg-sky-900 hover:ring-2 ring-white ring-inset  text-black rounded-full bg-sky-600 dark:bg-sky-600 dark:text-white  text-lg font-medium"
           >
-            Get Started
+           <Link to={'/signup'}> Get Started</Link>
           </button>
         </ul>
         {isactive && (
@@ -144,7 +143,7 @@ function Navbar() {
              hover:bg-sky-900 hover:ring-2 ring-white ring-inset
               text-black rounded-full bg-white dark:bg-sky-600 dark:text-white  text-lg font-medium"
           >
-            Get Started
+                   <Link to={'/signup'}> Get Started</Link>
           </button>
         </div>
       </header>

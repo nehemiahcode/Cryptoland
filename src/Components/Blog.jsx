@@ -42,8 +42,8 @@ function BlogComponent() {
 
       <section className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  w-full h-auto lg:px-20 md:px-10 py-10">
        {BlogCards.map((card, index) => (
-        <Zoom>
-             <div key={index} className={`  sm:h-[auto] h-[auto] pb-5 sm:w-[70%] md:w-[100%] w-[90%] ${card.margin && "md:ml-[55%] lg:m-0"} rounded-xl mx-auto shadow-2xl bg-white dark:bg-slate-700`}>
+        <Zoom key={index}>
+             <div  className={`  sm:h-[auto] h-[auto] pb-5 sm:w-[70%] md:w-[100%] w-[90%] ${card.margin && "md:ml-[55%] lg:m-0"} rounded-xl mx-auto shadow-2xl bg-white dark:bg-slate-700`}>
          <img src={card.img} alt="" className=" object-contain flex-1 rounded-t-xl hover:scale-90 duration-300" />
          <div className=" flex justify-around items-center my-3">
              <div className=" flex gap-2 items-center dark:text-white"><FaUserCheck className=" text-sky-500  text-lg"/> 10 June 2023  </div>
