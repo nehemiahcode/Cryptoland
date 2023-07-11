@@ -4,10 +4,10 @@ import { Teamdata } from '../Datas/Data1';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Teamimage1 from "../assets/Team1.webp"
-import Teamimage2 from "../assets/Team2.webp"
-import Teamimage3 from "../assets/Team3.webp"
-import Teamimage4 from "../assets/Team4.webp"
+import Teamimage1 from "../assets/team1.webp"
+import Teamimage2 from "../assets/team2.webp"
+import Teamimage3 from "../assets/team3.webp"
+import Teamimage4 from "../assets/team4.webp"
 import {BsLinkedin} from "react-icons/bs"
 import {BiLogoInstagramAlt} from "react-icons/bi"
 import {FaFacebookSquare} from "react-icons/fa"
@@ -49,12 +49,6 @@ function Teams() {
               ...style,
               display: "block",
               background: "black",
-              borderRadius: "50%",
-              height: "30px",
-              width: "30px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
             }}
             onClick={onClick}
           />
@@ -70,12 +64,6 @@ function Teams() {
               ...style,
               display: "block",
               background: "black",
-              borderRadius: "50%",
-              height: "30px",
-              width: "30px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
             }}
             onClick={onClick}
           />
